@@ -1,3 +1,114 @@
-#app {
-  color: teal;
+.splash {
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+.splash .element-1 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-2 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-3 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-4 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-5 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-6 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-7 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-8 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+.splash .element-9 {
+  display: none;
+  width: 10px;
+  height: 10px;
+  background-color: hotpink;
+}
+
+.splash:hover .element-1 {
+  display: block;
+  position: absolute;
+  transform: translate(0%, 300%);
+}
+
+.splash:hover .element-2 {
+  display: block;
+  position: absolute;
+  transform: translate(200%, 300%);
+}
+
+.splash:hover .element-3 {
+  display: block;
+  position: absolute;
+  transform: translate(400%, 300%);
+}
+
+.splash:hover .element-4 {
+  display: block;
+  position: absolute;
+  transform: translate(600%, 0%);
+}
+
+.splash:hover .element-5 {
+  display: block;
+  position: absolute;
+  transform: translate(800%, 0%);
+}
+
+.splash:hover .element-6 {
+  display: block;
+  position: absolute;
+  transform: translate(1000%, 0%);
+}
+
+.splash:hover .element-7 {
+  display: block;
+  position: absolute;
+  transform: translate(1200%, 0%);
+}
+
+.splash:hover .element-8 {
+  display: block;
+  position: absolute;
+  transform: translate(1400%, 0%);
+}
+
+.splash:hover .element-9 {
+  display: block;
+  position: absolute;
+  transform: translate(1600%, 0%);
 }
