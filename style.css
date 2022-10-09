@@ -1,114 +1,101 @@
-.splash {
-  position: absolute;
-  left: 200px;
-  top: 200px;
+:root {
+  --x-dir: 36px;
+  --y-dir: 24px;
+  --time: 50ms;
 }
 
-.splash .element-1 {
-  display: none;
+.splash-button {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+.splash-button .element {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: -1;
   width: 10px;
   height: 10px;
-  background-color: hotpink;
-}
-.splash .element-2 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-3 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-4 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-5 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-6 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-7 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-8 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
-}
-.splash .element-9 {
-  display: none;
-  width: 10px;
-  height: 10px;
-  background-color: hotpink;
+  background-color: deeppink;
+  border-radius: 50%;
 }
 
-.splash:hover .element-1 {
-  display: block;
-  position: absolute;
-  transform: translate(0%, 300%);
+.splash-button .element-1 {
+  transition: transform calc(10 * var(--time));
 }
 
-.splash:hover .element-2 {
-  display: block;
-  position: absolute;
-  transform: translate(200%, 300%);
+.splash-button .element-2 {
+  transition: transform calc(2 * var(--time));
 }
 
-.splash:hover .element-3 {
-  display: block;
-  position: absolute;
-  transform: translate(400%, 300%);
+.splash-button .element-3 {
+  transition: transform calc(3 * var(--time));
 }
 
-.splash:hover .element-4 {
-  display: block;
-  position: absolute;
-  transform: translate(600%, 0%);
+.splash-button .element-4 {
+  transition: transform calc(4 * var(--time));
 }
 
-.splash:hover .element-5 {
-  display: block;
-  position: absolute;
-  transform: translate(800%, 0%);
+.splash-button .element-5 {
+  transition: transform calc(5 * var(--time));
 }
 
-.splash:hover .element-6 {
-  display: block;
-  position: absolute;
-  transform: translate(1000%, 0%);
+.splash-button .element-6 {
+  transition: transform calc(6 * var(--time));
 }
 
-.splash:hover .element-7 {
-  display: block;
-  position: absolute;
-  transform: translate(1200%, 0%);
+.splash-button .element-7 {
+  transition: transform calc(7 * var(--time));
 }
 
-.splash:hover .element-8 {
-  display: block;
-  position: absolute;
-  transform: translate(1400%, 0%);
+.splash-button .element-8 {
+  transition: transform calc(8 * var(--time));
 }
 
-.splash:hover .element-9 {
-  display: block;
-  position: absolute;
-  transform: translate(1600%, 0%);
+.splash-button .element-9 {
+  transition: transform calc(9 * var(--time));
+}
+
+/* bottom center */
+.splash-button:hover .element-1 {
+  transform: translate(0px, var(--y-dir));
+}
+
+/* bottom left  */
+.splash-button:hover .element-2 {
+  transform: translate(calc(-1 * var(--x-dir)), var(--y-dir));
+}
+
+/* left */
+.splash-button:hover .element-3 {
+  transform: translate(calc(-1 * var(--x-dir)), 0px);
+}
+
+/* left top */
+.splash-button:hover .element-4 {
+  transform: translate(calc(-1 * var(--x-dir)), calc(-1 * var(--y-dir)));
+}
+
+/* top center */
+.splash-button:hover .element-5 {
+  transform: translate(0px, calc(-1 * var(--y-dir)));
+}
+
+/* top right */
+.splash-button:hover .element-6 {
+  transform: translate(var(--x-dir), calc(-1 * var(--y-dir)));
+}
+
+/* right */
+.splash-button:hover .element-7 {
+  transform: translate(var(--x-dir), 0%);
+}
+
+/* bottom right  */
+.splash-button:hover .element-8 {
+  transform: translate(var(--x-dir), var(--y-dir));
 }
